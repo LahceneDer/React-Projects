@@ -32,23 +32,8 @@ const ToursApp = () => {
     }
 
     useEffect(() => {
-        const fetchTours = async () => {
-            setLoading(true)
-            try {
-                const response = await fetch(baseUrl)
-                const tours = await response.json()  
-                setLoading(false)
-                setTours(tours)
-            } catch (error) {
-                setLoading(false)
-                console.log(error);
-            }
-    
-            console.log(tours);
-    
-        }
         fetchTours()
-    },[])
+    },[tours])
 
 
 
