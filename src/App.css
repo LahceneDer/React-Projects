@@ -1,7 +1,15 @@
 *{
   box-sizing: border-box;
 }
+body{
+  background-color: aliceblue;
+}
 
 .App {
   text-align: center;
+}
+
+nav .link {
+  font-size: 30px;
+  text-decoration: none;
 }

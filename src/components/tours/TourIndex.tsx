@@ -14,7 +14,7 @@ const TourIndex: React.FC<ITourData> = ({id,image,info,name,price, removeTour}) 
     return (
         <div className='tour-card'>
            <div className='tour-img'>
-           <img src={image} width="100%" height="400px" />
+           <img src={image} alt={name} width="100%" height="400px" />
            </div>
             <div className='tour-content'>
                 <h3>{name}</h3>

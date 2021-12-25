@@ -1,6 +1,7 @@
 body{
     background-color: #00ADB5;
     font-family: 'Cairo', sans-serif;
+    text-align: center;
 }
 
 .tours h1 {
@@ -19,7 +20,6 @@ body{
 }
 
 .tour-card .tour-img{
-    width: 100%;
     margin: 0;
     display: block;
 }
@@ -58,8 +58,10 @@ body{
 .tour-card .tour-content h5{
     float: right;
     display: inline-block;
-    border-left: 1px solid #222831;
-    width: 9%;
+    border-left: 1px solid  #222831 ;
+    background-color: #222831;
+    color: #00adb5;
+    width: 15%;
 }
 
 .tour-card footer{
