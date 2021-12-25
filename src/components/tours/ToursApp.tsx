@@ -33,7 +33,7 @@ const ToursApp = () => {
 
     useEffect(() => {
         fetchTours()
-    })
+    },[])
 
 
 
