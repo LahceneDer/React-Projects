@@ -3,7 +3,11 @@ import TourLoading from './TourLoading'
 import Tours from './Tours'
 import './ToursApp.css'
 
-const ToursApp = () => {
+interface IToursProps {
+    removeTour?: any
+}
+
+const ToursApp: React.FC<IToursProps> = ({removeTour}) => {
     const [loading, setLoading] = useState(true)
     const [tours, setTours] = useState<any>([])
 
@@ -22,16 +26,17 @@ const ToursApp = () => {
         }
 
         console.log(tours);
+        const removeTour = (id:number) => {
+            const newTours = tours.filter((tour: any) => tour.id !== id)
+            setTours(newTours)
+        }
     }
 
     useEffect(() => {
         fetchTours()
     }, [])
 
-    const removeTour = (id:number) => {
-        const newTours = tours.filter((tour: any) => tour.id !== id)
-        setTours(newTours)
-    }
+
 
 
     if(loading) {
