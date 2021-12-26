@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import TourLoading from './TourLoading'
 import Tours from './Tours'
+import data from './data.json'
 import './ToursApp.css'
 
 
@@ -11,17 +12,18 @@ const ToursApp = () => {
     const baseUrl = "https://course-api.com/react-tours-project"
 
     const fetchTours = async () => {
-        setLoading(true)
-        try {
-            const response = await fetch(baseUrl)
-            const tours = await response.json()  
-            setLoading(false)
-            setTours(tours)
-        } catch (error) {
-            setLoading(false)
-            console.log(error);
-        }
-        console.log(tours);
+        setLoading(false)
+        // try {
+        //     const response = await fetch(baseUrl)
+        //     const tours = await response.json()  
+        //     setLoading(false)
+        //     setTours(tours)
+        // } catch (error) {
+        //     setLoading(false)
+        //     console.log(error);
+        // }
+        // console.log(tours);
+        setTours(data)
 
     }
 
@@ -31,22 +33,24 @@ const ToursApp = () => {
     }
 
     useEffect(() => {
-        async function fetchData() {
-            setLoading(false)
-            try {
-                const response = await fetch(baseUrl)
-                const tours = await response.json()  
-                setLoading(false)
-                setTours(tours)
-            } catch (error) {
-                setLoading(false)
-                console.log(error);
-            }
+        // async function fetchData() {
+        //     setLoading(false)
+        //     try {
+        //         const response = await fetch(baseUrl)
+        //         const tours = await response.json()  
+        //         setLoading(false)
+        //         setTours(tours)
+        //     } catch (error) {
+        //         setLoading(false)
+        //         console.log(error);
+        //     }
     
-            console.log(tours);
-        }
-        fetchData()
-    },[tours])
+        //     console.log(tours);
+        // }
+        // fetchData()
+        setLoading(false)
+        setTours(data)
+    },[])
 
 
 
