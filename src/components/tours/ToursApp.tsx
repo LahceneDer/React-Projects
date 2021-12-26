@@ -32,7 +32,7 @@ const ToursApp = () => {
 
     useLayoutEffect(() => {
         async function fetchData() {
-            setLoading(true)
+            setLoading(false)
             try {
                 const response = await fetch(baseUrl)
                 const tours = await response.json()  
