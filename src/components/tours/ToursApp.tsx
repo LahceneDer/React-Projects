@@ -45,6 +45,7 @@ const ToursApp = () => {
     
             console.log(tours);
         }
+        fetchData()
     },[tours])
 
 
