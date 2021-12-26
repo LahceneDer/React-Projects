@@ -21,7 +21,6 @@ const ToursApp = () => {
             setLoading(false)
             console.log(error);
         }
-
         console.log(tours);
 
     }
@@ -46,7 +45,7 @@ const ToursApp = () => {
     
             console.log(tours);
         }
-    },[loading])
+    },[])
 
 
 
