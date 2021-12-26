@@ -42,7 +42,7 @@ const ToursApp = () => {
             setLoading(false)
             console.log(error);
         }
-    })
+    },[])
 
 
 
