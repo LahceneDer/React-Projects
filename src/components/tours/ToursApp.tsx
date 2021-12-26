@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useLayoutEffect} from 'react'
 import TourLoading from './TourLoading'
 import Tours from './Tours'
 import './ToursApp.css'
@@ -31,9 +31,22 @@ const ToursApp = () => {
         setTours(newTours)
     }
 
-    useEffect(() => {
-        fetchTours();
-    },[])
+    useLayoutEffect(() => {
+        async function fetchData() {
+            setLoading(true)
+            try {
+                const response = await fetch(baseUrl)
+                const tours = await response.json()  
+                setLoading(false)
+                setTours(tours)
+            } catch (error) {
+                setLoading(false)
+                console.log(error);
+            }
+    
+            console.log(tours);
+        }
+    },[loading])
 
 
 
