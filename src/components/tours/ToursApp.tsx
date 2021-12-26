@@ -9,7 +9,7 @@ const ToursApp = () => {
     const [loading, setLoading] = useState(true)
     const [tours, setTours] = useState<any>([])
 
-    const baseUrl = "https://course-api.com/react-tours-project"
+    // const baseUrl = "https://course-api.com/react-tours-project"
 
     const fetchTours = async () => {
         setLoading(false)
