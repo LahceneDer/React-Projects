@@ -37,7 +37,6 @@ const ToursApp = () => {
             const response =  fetch(baseUrl)
             const tours =  response 
             setLoading(false)
-            setTours(tours)
         } catch (error) {
             setLoading(false)
             console.log(error);
