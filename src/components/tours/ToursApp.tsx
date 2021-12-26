@@ -32,7 +32,7 @@ const ToursApp = () => {
     }
 
     useEffect(() => {
-        fetchTours()
+        fetchTours();
     },[])
 
 
@@ -57,7 +57,7 @@ const ToursApp = () => {
 
     return (
         <>
-                <style>
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
         </style>
         <main>
