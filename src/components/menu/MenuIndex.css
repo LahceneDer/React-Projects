@@ -74,7 +74,7 @@ display: inline-block;
 .category-btn  {
     display: inline-block;
     text-align: center;
-    margin: 1% auto;
+    margin: 0 auto;
 }
 
 .category-btn button {
@@ -83,7 +83,7 @@ display: inline-block;
     background-color: transparent;
     cursor: pointer;
     text-align: center;
-    margin: 0.3% 8px;
+    margin: 0 8px;
     font-size: 15px;
     transition: .3s;
 }
@@ -91,4 +91,8 @@ display: inline-block;
 .category-btn button:hover {
     background-color: #801336;
     color: white;
+}
+
+.categories-title{
+    margin: 0;
 }

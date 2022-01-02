@@ -22,7 +22,7 @@ const Menu: React.FC<IMenuData> = ({items}) => {
                             <h4 className='title' > {title} </h4>
                             <h4 className='price' > price: {price} </h4>
                         </header> 
-                        <p className='desc' > {desc} </p></div>
+                        <p className='desc' > { desc.substring(0,202) + "..."} </p></div>
                      </article>
                    </>
                )

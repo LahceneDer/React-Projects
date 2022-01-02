@@ -40,7 +40,10 @@ const MenuApp = () => {
                 <div className='title' >
                     <h2>our menu</h2>
                 </div>
+                <div>
+                <h3 className='categories-title' >Categories</h3>
                 <MenuCategories categories={categories} filterItems={filterItems} />
+                </div>
                 <Menu items={menuItems} />
             </section>
         </main>
