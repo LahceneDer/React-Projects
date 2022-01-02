@@ -50,7 +50,7 @@ const ToursApp = () => {
         // fetchData()
         setLoading(false)
         setTours(data)
-    },[data])
+    },[])
 
 
 
