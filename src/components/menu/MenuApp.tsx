@@ -17,7 +17,7 @@ const MenuApp = () => {
 
     useEffect(() => {
         setCategories(allCategories)
-    }, [allCategories])
+    }, [])
 
     const filterItems = (category: string) => {
         if(category === 'all') {
