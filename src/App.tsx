@@ -15,6 +15,10 @@ function App() {
         <NavLink className="link" to={"tours"} >
           Tours Project
         </NavLink>
+        <br />
+        <NavLink className="link" to={"menu"} >
+          Menu Project
+        </NavLink>
       </nav>
     </div>
     </>

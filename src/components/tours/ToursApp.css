@@ -1,7 +1,10 @@
-body{
+.tours{
     background-color: #00ADB5;
     font-family: 'Cairo', sans-serif;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .tours h1 {
