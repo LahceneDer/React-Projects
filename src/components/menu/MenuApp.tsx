@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import Menu from './Menu'
 import MenuCategories from './MenuCategories'
 import {data} from './MenuData'
@@ -14,6 +14,10 @@ console.log(allCategories);
 const MenuApp = () => {
     const [menuItems, setMenuItems] = useState(data)
     const [categories, setCategories] = useState(allCategories)
+
+    useEffect(() => {
+        setCategories(allCategories)
+    }, [allCategories])
 
     const filterItems = (category: string) => {
         if(category === 'all') {
