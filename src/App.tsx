@@ -19,6 +19,10 @@ function App() {
         <NavLink className="link" to={"menu"} >
           Menu Project
         </NavLink>
+        <br/>
+        <NavLink className="link" to={"slider"} >
+          Slider Project
+        </NavLink>
       </nav>
     </div>
     </>

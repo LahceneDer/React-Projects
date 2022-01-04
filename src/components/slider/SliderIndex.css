@@ -1,0 +1,89 @@
+.slider-section {
+    margin: auto;
+}
+
+.slider-section .slider-title h2{
+    text-align: center;
+    border-bottom: 2px solid #705950;
+    width: 15%;
+    padding-bottom: .5%;
+    margin: 0 auto;
+}
+
+.slider-section .slider-center {
+    text-align: center;
+    position: relative;
+}
+
+
+.slider-section .slider-center article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 5%;
+    font-weight: 600;
+}
+
+.slider-section .slider-center article .img{
+    overflow: hidden;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+}
+
+.slider-section .slider-center article .img img{
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border: 5px solid #cfcfcf;
+    border-radius: 50%;
+}
+
+.slider-section .slider-center article h4{
+    border-left: 3px solid #705950;
+    border-right: 3px solid #705950;
+    width: 22%;
+    color: #E45826;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+
+.slider-section .slider-center article p:last-of-type{
+    padding:0 20%;
+}
+
+.slider-section .slider-center button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #705950;
+    position: absolute;
+    transition: .18s;
+}
+
+.slider-section .slider-center button:hover {
+    color: #1E212D;
+
+}
+
+.slider-section .slider-center button.next {
+    top: 270px;
+    right: 20%;
+}
+.slider-section .slider-center button.prev {
+    top: 270px;
+    left: 20%;
+}
+
+.display-none {
+    display: none;
+}
+
+
+
+
